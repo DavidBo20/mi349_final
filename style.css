@@ -16,7 +16,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     top: 0;
     width: 100%; 
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
@@ -24,161 +24,77 @@ h1 {
     font-size: 52px;
     color: rgb(56, 18, 128);
 }
-
-.details section {
-    flex-grow: 1;
-    flex-basis: 0;
-    background: #54c3d1;
-    border-radius: 20px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    text-align: center;
-    gap: 25px;
-}
-
-.details2 section {
-    flex-grow: 1;
-    flex-basis: 0;
-    background: #54c3d1;
-    border-radius: 20px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    text-align: center;
-    gap: 25px;
-}
-
-.details p {
-    margin: 20px;
-}
-
-.details2 p {
-    margin: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column; 
-    width: 300px;
-    padding: 20px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    background-color: #54c3d1;
-}
-
-.image-container {
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px; 
-}
-
-.image-container img {
-    width: 35%;
-    height: auto;
-}
-
-nav ul {
-    list-style: none;
-    text-align: center; 
-    padding: 0;
+* {
     margin: 0;
-    display: flex;
-}
-nav ul li {
-    margin-right: 20px; 
-}
-
-nav ul li a {
-    text-decoration: none; 
-    color: #0c8b70; 
-}
-
-nav ul li a:hover {
-    text-decoration: underline; 
-}
-
-h2 {
-    text-align: center;
-}
-
-p {
-margin: 0;
-line-height: 1.4em;
-}
-
-table {
-    text-align: center;
-    align-items: center;
-    margin: auto;
-    border-collapse: collapse;
-}
-
-th, td {
-border: 1px solid black; 
-padding: 8px; 
-text-align: center; 
-}
-
-
-.about_details {
-    display: flex;
-    gap: 25px;
-}
-
-.about_details section {
-    flex-grow: 1;
-    flex-basis: 0;
-    background: #54c3d1;
-    border-radius: 20px;
-    margin-top: 15px;
-}
-
-.about-image-container {
-    display: flex; 
-    justify-content: space-around; 
-
-    padding: 25px; 
-}
-
-.about-image-container img {
-    width: 30%; 
-    height: auto;
-}
-
-.about_details section p {
-    margin: 20px;
-}
-
-.about_details section h2 {
-    margin: 20px;
-}
-
-.about_details section.with-code {
     padding: 0;
+    box-sizing: border-box;
 }
 
-div.code-html {
-    padding: 5px;
-    background: #0050fc;
-    color: #fff;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    flex-grow: 1;
-    flex-basis: 0;
-    border-radius: 20px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
+/* Container that holds everything */
+.container {
+    display: flex;
+
+    justify-content: space-between;
 }
 
-.contact-section {
+/* Left Section - Images vertically stacked */
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;  /* Adjust this to control the width of the left section */
+}
+
+.left img {
+    width: 10%;
+    height: 10%;
+    margin-bottom: 10px; /* Space between images */
+}
+
+/* Center Section - Text in the middle */
+.hometext {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;  /* Adjust this to control the width of the center section */
+}
+
+.center p {
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Right Section - Flexbox Layout with images and links */
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  /* Evenly space items */
+    align-items: flex-start;  /* Align items to the left */
+    width: 25%;  /* Adjust this to control the width of the right section */
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;  /* Align the image and text in a row */
+    margin-bottom: 20px;  /* Space between items */
+}
+
+.flex-item img {
+    width: 50px;  /* Set a fixed size for the images */
+    height: auto;
+    margin-right: 10px;  /* Space between image and text */
+}
+
+.flex-item a {
+    text-decoration: none;
+    color: #333;  /* Default color for the link */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Optional: Add hover effect on links */
+.flex-item a:hover {
+    color: #007BFF;
 }
