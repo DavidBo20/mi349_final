@@ -33,7 +33,7 @@ h1 {
 /* Container that holds everything */
 .container {
     display: flex;
-
+    padding: 20px;
     justify-content: space-between;
 }
 
@@ -41,15 +41,13 @@ h1 {
 .left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 25%;  /* Adjust this to control the width of the left section */
 }
 
 .left img {
-    width: 10%;
-    height: 10%;
-    margin-bottom: 10px; /* Space between images */
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px; /* Space between images */
 }
 
 /* Center Section - Text in the middle */
@@ -71,8 +69,11 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;  /* Evenly space items */
-    align-items: flex-start;  /* Align items to the left */
     width: 25%;  /* Adjust this to control the width of the right section */
+    border: 1px solid #ccc; /* Adds a box around the entire section */
+    padding: 20px; /* Adds padding inside the box */
+    border-radius: 8px; /* Optional: Rounded corners for the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 
 .flex-item {
@@ -98,3 +99,54 @@ h1 {
 .flex-item a:hover {
     color: #007BFF;
 }
+
+    /* Main container for the grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    }
+  
+    /* Each item in the grid */
+    .grid-item {
+        text-align: center;
+    }
+  
+/* Image styling */
+.grid-item img {
+    width: 100%; /* Make image take full width of container */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners */
+    }
+  
+/* Button styling */
+.grid-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    }
+  
+.grid-item button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    }
+
+/* Button to go to grid page */
+.grid-button {
+    display: block;
+    margin: 30px auto 0; /* Centers the button and adds space above it */
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    }
