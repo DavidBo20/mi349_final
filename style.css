@@ -2,14 +2,14 @@ body {
     margin: 0;
     background: #b8fdff;
     font-family: Helvetica, sans-serif;
-    border-top: 15px solid rgb(56, 18, 128);
+    border-top: 15px solid rgb(255, 255, 255);
     color: #000000;
 }
 
 header {
     position: sticky;
     z-index: 1000;
-    background-color: #82aaff;
+    background-color: #092500;
     font-family: Helvetica, sans-serif; 
     border: 1px solid #0080ff; 
     padding: 10px; 
@@ -22,10 +22,11 @@ header {
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 52px;
-    color: rgb(56, 18, 128);
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
 }
 * {
-    margin: 0;
+    margin: 20px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -62,6 +63,7 @@ h1 {
 
 .center p {
     margin-bottom: 20px; /* Space between paragraphs */
+    margin-bottom: 20px;
 }
 
 /* Right Section - Flexbox Layout with images and links */
