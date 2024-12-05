@@ -40,6 +40,7 @@ h1 {
     flex-grow: 1;
 }
 
+
 .left {
     display: flex;
     flex-direction: column;
@@ -52,6 +53,22 @@ h1 {
     height: auto; 
     border: 2px solid black; 
     border-radius: 4px; 
+}
+
+.infoSection img {
+    width: 100%; 
+    height: auto; 
+    border: 2px solid black; 
+    border-radius: 4px; 
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.infoSection {
+    width: 500px; 
+    height: auto; 
+    border-radius: 4px; 
+    object-fit: contain;
 }
 
 .left img {
@@ -167,4 +184,20 @@ h1 {
     border-radius: 12px;
     cursor: pointer;
     text-decoration: none;
+    }
+
+.cpuinfoSection img {
+    width: 100%; 
+    height: auto; 
+    border: 2px solid black; 
+    border-radius: 4px; 
+    object-fit: contain;
+    max-width: 100%;
+    }
+
+.cpuinfoSection {
+    width: 500px; 
+    height: auto; 
+    border-radius: 4px; 
+    object-fit: contain;
     }
