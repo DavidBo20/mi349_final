@@ -223,3 +223,54 @@ h1 {
 .grid-title {
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+      background-color: #A288E3;
+    }
+    header {
+        background-color: aqua;
+    }
+    .right {
+        background-color: #8AFFC1;
+    }
+}
+ 
+  @media (max-width: 1024px) {
+    .flex-item img {
+        width: 100px;
+        height: auto;
+    }
+  .grid-button:hover {
+    background-color: aqua;
+    }
+    .grid-item button:hover {
+        background-color: aqua;
+    }
+
+}
+
+@media (max-width: 768px) {
+    body {
+      font-size: 12px;
+      padding: 5px;
+      background-color: #FFFFC7;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    header {
+        background-color: #548687;
+    }
+    .right {
+        background-color: #FCAA67;
+    }
+    .grid-button:hover {
+        background-color: #B0413E;
+    }
+        .grid-item button:hover {
+            background-color: #B0413E;
+    }
+  }
